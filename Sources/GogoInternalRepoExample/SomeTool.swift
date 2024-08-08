@@ -7,8 +7,8 @@
 
 import Foundation
 
-final class SomeTool {
-    static func safeAdder(_ input: Int) -> Int {
+public final class SomeTool {
+    public static func safeAdder(_ input: Int) -> Int {
         input &+ 1
     }
 }
