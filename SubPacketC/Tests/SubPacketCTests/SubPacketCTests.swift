@@ -1,12 +1,16 @@
+//
+//  PackageCTests.swift
+//
+//
+//  Created by Alex Lin Work on 2024/8/12.
+//
+
 import XCTest
 @testable import SubPacketC
 
-final class SubPacketCTests: XCTestCase {
-    func testExample() throws {
-        // XCTest Documentation
-        // https://developer.apple.com/documentation/xctest
+final class PackageBTests: XCTestCase {
 
-        // Defining Test Cases and Test Methods
-        // https://developer.apple.com/documentation/xctest/defining_test_cases_and_test_methods
+    func testPackageB() async throws {
+        XCTAssertEqual(PackageC().output(), "C")
     }
 }

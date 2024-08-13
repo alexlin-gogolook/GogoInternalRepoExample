@@ -11,6 +11,6 @@ import XCTest
 final class PackageBTests: XCTestCase {
 
     func testPackageB() async throws {
-        XCTAssertEqual(PackageA().output(), "B")
+        XCTAssertEqual(PackageB().output(), "B")
     }
 }
