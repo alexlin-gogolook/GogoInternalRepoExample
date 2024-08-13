@@ -9,10 +9,20 @@ let package = Package(
         .library(
             name: "GogoInternalRepoExample",
             targets: ["GogoInternalRepoExample"]),
+        .library(
+            name: "SomeSubPackageA",
+            targets: ["SomeSubPackageA"]),
+        .library(
+            name: "SomeSubPackageB",
+            targets: ["SomeSubPackageB"]),
     ],
     targets: [
         .target(
             name: "GogoInternalRepoExample"),
+        .target(
+            name: "SomeSubPackageA"),
+        .target(
+            name: "SomeSubPackageB"),
         .testTarget(
             name: "GogoInternalRepoExampleTests",
             dependencies: ["GogoInternalRepoExample"]),
