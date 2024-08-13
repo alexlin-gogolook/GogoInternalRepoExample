@@ -8,6 +8,9 @@
 import Foundation
 
 public class PackageB {
+    public init() {
+    }
+    
     public func output() -> String {
         "B"
     }
